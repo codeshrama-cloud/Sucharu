@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+.container {
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+.header {
+  background-color: rgb(252, 252, 252);
+  padding: 10px;
+  border-bottom: 1px solid #e75555;
+}
+
+.main-container {
+  width: 600px;
+  margin: auto;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  text-align: center;
+}
+
+header {
+  position: relative;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.logo {
+  padding: 0 20px;
+}
+
+.merge {
+  display: flex;
+}
+.navbar {
+  background-color: white;
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  position: relative;
+  color: rgb(18, 18, 18);
+  padding: 14px 16px;
+  text-align: center;
+}
+
+.navbar li:hover {
+  background-color: #fbf4f4;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #e3c2c2;
+  min-width: 160px;
+}
+
+.dropdown li {
+  float: none;
+  color: rgb(44, 58, 72);
+  padding: 12px 16px;
+  text-align: right;
+}
+
+.dropdown li:hover {
+  background-color: #e56060;
+}
+
+.navbar li:hover .dropdown{
+  display: block;
+}
+
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.search-bar {
+  max-width: 400px;         
+  height: 80px; 
+  margin: 0 auto;            
+  padding: 20px;            
+  border: 2px solid #ccc;   
+  border-radius: 40px;                 
+  outline: none;            
+  transition: border-color 0.3s; 
+} 
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  width: 400px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+input[type="radio"] {
+  display: none; 
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.nav-dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#slide1:checked ~ .slides {
+  transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+#slide4:checked ~ .slides {
+  transform: translateX(-300%);
+}
+
+input[type="radio"]:checked + .slides + .navigation .nav-dot {
+  background-color: #dfb9b9;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  min-height: 400px;
+}
+
+.left-column { 
+  border: 2px solid rgb(239, 235, 235);
+  padding: 30px;
+  border-radius: 30px;
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.right-section {
+  border: 2px solid rgb(242, 239, 239);
+  width: 90%;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+
+}
+
+.right-row {
+  flex: 1;
+  padding: 20px;
+  margin: 5px;
+  height: 200px;
+  border-radius: 50px;
+}
+
+.r1 {
+  background-color: #ffebee;
+}
+
+.r2 {
+  background-color: #e3f2fd;
+}
+
+.r3 {
+  background-color: #e8f5e9;
+}
+* {
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  margin: 20px;
+  padding: 10px;
+  height: 50px;
+  background-color: #5b4b4b;
+  padding: 10px 0;
+}
+
+.navbar a {
+  color: rgb(232, 62, 62);
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.navbar a:hover {
+  background-color: #f6eaea;
+}
+.top-row, .bottom-row {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.top-row img, .bottom-row img {
+  width: calc(33.33% - 10px);
+
+  margin-bottom: 10px;
+}
+
+.bottom-row img {
+  width: calc(16.66% - 10px); 
+}
+.tab-img{
+  width: 100%;
+  height:330px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.tab-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.avatar{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.avatar img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.av{
+  display: flex;
+  border: 2px solid red;
+  width: 200px;
+  height: 600px;
+}
+.kl{
+  background-color: #e56060;
+  margin: 10px;
+  padding: 20px;
+  border: 3px solid blue;
+}
